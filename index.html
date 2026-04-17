@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Interest System</title>
+  <style>
+    /* ตั้งค่าไม่ให้มีขอบ และไม่ให้หน้าจอเลื่อนซ้อนกัน */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden; 
+    }
+    /* เทคนิคดันหน้าจอขึ้นไปซ่อนแถบสีฟ้า */
+    .iframe-container {
+      position: absolute;
+      top: -3px; /* ถ้าแถบสียังโผล่มานิดนึง ให้เปลี่ยนเป็น -50px หรือ -55px */
+      left: 0;
+      width: 100%;
+      height: calc(100% + 3px); /* ขยายจอชดเชยส่วนที่โดนดันขึ้นไป */
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="iframe-container">
+    <iframe src="https://script.google.com/macros/s/AKfycbzc4wcZRbkyBIP8WemZ_n45JtWwyMxqI7xaBs3pQpuQUNzZ0miIzHGvPp5jkIFFoV47/exec"></iframe>
+  </div>
+
+</body>
+</html>
